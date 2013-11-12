@@ -32,7 +32,18 @@ get_header(); ?>
 					<?php query_posts('category_name=Help'); ?>
 					<ul>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<li><?php the_title(); ?></li>
+					<li>
+						<?php the_title(); ?>
+						
+						<?php
+						$posttags = get_the_tags();
+						if ($posttags) {
+						  foreach($posttags as $tag) {
+						    echo $tag->name . ' '; 
+						  }
+						}
+						?>
+					</li>
 					<?php endwhile; ?>
 					</ul>
 					<?php endif; ?>
