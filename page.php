@@ -23,22 +23,26 @@ get_header(); ?>
 				?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'content', 'page' ); ?>					
+					<?php get_template_part( 'content', 'page' ); ?>
+					<?php $pageTitle = get_the_title(); ?>					
 				<?php endwhile; // end of the loop. ?>
 			
-				<?php query_posts('category_name=Help'); ?>
-				<ul>
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<li><?php the_title(); ?></li>
-				<?php endwhile; ?>
-				</ul>
+				<?php if(get_the_title() == "Help"): ?>
+
+					<?php query_posts('category_name=Help'); ?>
+					<ul>
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<li><?php the_title(); ?></li>
+					<?php endwhile; ?>
+					</ul>
+					<?php endif; ?>
 				<?php endif; ?>
 
 			</div><!-- #content -->
 
 		</div><!-- #primary -->
 
-	<?php if(get_the_title() != "Help"){
+	<?php if($pageTitle != "Help"){
 		get_sidebar(); }?>
 
 
