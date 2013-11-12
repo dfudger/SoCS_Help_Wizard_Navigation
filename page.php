@@ -26,11 +26,13 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>					
 				<?php endwhile; // end of the loop. ?>
 			
-				
-
-				
-					
-
+				<?php query_posts('category_name=Help'); ?>
+				<ul>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<li><?php the_title(); ?></li>
+				<?php endwhile; ?>
+				</ul>
+				<?php endif; ?>
 
 			</div><!-- #content -->
 
