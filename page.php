@@ -28,18 +28,7 @@ get_header(); ?>
 			
 				
 
-				<?php if(get_the_title() == "Help"): ?>
-					<?php query_posts('category_name=Help'); ?>
-						<ul>
-						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<li><?php the_post_title(); ?></li>
-						<?php endwhile; ?>
-						</ul>
 				
-						<?php endif; ?>	
-					
-				
-				<?php endif; ?>
 					
 
 
