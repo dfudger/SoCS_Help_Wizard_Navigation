@@ -78,45 +78,47 @@ get_header(); ?>
                         while ( have_posts() ) : the_post(); ?>
 
                             <!-- Single Help Tutorial -->
-                            <a href = "<?php echo get_permalink() ?>" >
-                            <div class="element <?php
-                            $posttags = get_the_tags();
-                            if ($posttags) {
-                              foreach($posttags as $tag) {
-                                echo $tag->name . ' '; 
-                              }
-                            }
-                            ?>" data-category="<?php
-                            $posttags = get_the_tags();
-                            if ($posttags) {
-                              foreach($posttags as $tag) {
-                                echo $tag->name . ' '; 
-                              }
-                            }
-                            ?>">
-                            <h2 class="name"><?php echo the_title(); ?></h2>
-                            <p class="weight"><?php
-                            $posttags = get_the_tags();
-                            if ($posttags) {
-                              foreach($posttags as $tag) {
-                                echo $tag->name . ' '; 
-                              }
-                            } ?></p>
+                            <div>
+                                <a href="<?php echo get_permalink() ?>">
+                                <div class="element <?php
+                                    $posttags = get_the_tags();
+                                    if ($posttags) {
+                                      foreach($posttags as $tag) {
+                                        echo $tag->name . ' '; 
+                                      }
+                                    }
+                                    ?>" data-category="<?php
+                                    $posttags = get_the_tags();
+                                    if ($posttags) {
+                                      foreach($posttags as $tag) {
+                                        echo $tag->name . ' '; 
+                                      }
+                                    }
+                                    ?>">
+                                    <h2 class="name"><?php echo the_title(); ?></h2>
+                                    <p class="weight"><?php
+                                    $posttags = get_the_tags();
+                                    if ($posttags) {
+                                      foreach($posttags as $tag) {
+                                        echo $tag->name . ' '; 
+                                      }
+                                    } ?></p>
+                                </div>
+                                </a>
                             </div>
-                            <!-- </a> -->
                     
-                        <?php endwhile; ?> <!-- #Stop looping through help posts -->
+                        <?php endwhile; ?>	<!-- #Stop looping through help posts -->
+
                     <?php endif; ?>
-                
-                </div> <!-- #close outter box -->
-                </section><!-- #content -->
-            <?php endif; ?><!-- #end Help Section -->
 
-        </div><!-- #content -->
+                </div>	<!-- #close outter box -->
 
-    </div><!-- #primary -->
+                </section>	<!-- #content -->
+            <?php endif; ?>	<!-- #end Help Section -->
+
+        </div>	<!-- #content -->
+
+    </div>	<!-- #primary -->
 
 <?php if($pageTitle != "Help") get_sidebar(); ?>
-
-
 <?php get_footer(); ?>
