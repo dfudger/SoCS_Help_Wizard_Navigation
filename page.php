@@ -111,7 +111,7 @@ get_header(); ?>
 
                     <?php endif; ?>
 
-                </div>	<!-- #close outter box -->
+                </div>	<!-- #close outer box -->
 
                 </section>	<!-- #content -->
             <?php endif; ?>	<!-- #end Help Section -->
