@@ -166,7 +166,7 @@ body {
 }
 
 .element {
-  width: 530px;
+  width: 800px;
   height: 110px;
   margin: 5px;
   float: left;
@@ -418,21 +418,22 @@ body {
   width: 100%;
 }
 
-#content {
-  margin-left: 210px;
+#helpContent {
+  margin-left: 25px;
+  width: 800px;
 }
 
-.demos #content {
+.demos #helpContent {
   height: 100%;
 }
 
 /**** Docs ****/
 
-.docs #content {
+.docs #helpContent {
   max-width: 850px;
 }
 
-.docs #content a:hover {
+.docs #helpContent a:hover {
   border-bottom: 1px dotted;
 }
 
@@ -494,21 +495,21 @@ body {
   font-weight: normal;
 }
 
-/**** Doc content ****/
+/**** Doc helpContent ****/
 
-.docs #content h2 {
+.docs #helpContent h2 {
   border-top: 1px solid #333;
   padding-top: 0.8em;
   margin-bottom: 0.8em;
 }
 
-.docs #content h2:target { 
+.docs #helpContent h2:target { 
   padding: 10px;
   background: white;
   color: #222;
 }
 
-.docs #content h3 {
+.docs #helpContent h3 {
   color: #FEC;
   background: hsla( 0, 0%, 75%, 0.05 );
   padding: 2px 0.5em;
@@ -516,7 +517,7 @@ body {
   font-size: 1.15em;
 }
 
-.docs #content h4 {
+.docs #helpContent h4 {
   margin-bottom: 0.5em;
   font-size: 14px;
 }
@@ -539,11 +540,11 @@ pre, code {
   font-family: 'Monaco', monospace, sans-serif;
 }
 
-#content code {
+#helpContent code {
   font-size: 12px;
 }
 
-#content pre {
+#helpContent pre {
   line-height: 1.6em;
 }
 
@@ -598,6 +599,6 @@ h3#options {
 
 
 /* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:before, .clearfix:after { helpContent: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
