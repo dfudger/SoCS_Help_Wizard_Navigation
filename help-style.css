@@ -166,22 +166,25 @@ body {
 }
 
 .element {
-  width: 120px;
-  height: 220px;
+  width: 530px;
+  height: 110px;
   margin: 5px;
   float: left;
   overflow: hidden;
   position: relative;
-  background: #888;
+  background: #ecf0f1;
   color: #222;
-  -webkit-border-top-right-radius: 1.2em;
+  border-width: 10px;
+  border-color: #bdc3c7;
+  /*-webkit-border-top-right-radius: 1.2em;
       -moz-border-radius-topright: 1.2em;
-          border-top-right-radius: 1.2em;
+          border-top-right-radius: 1.2em;*/
+  border-radius: 6px;
 }
 
-.element.grounds         { background: #F00; background: hsl(   0, 100%, 50%); }
-.element.networking      { background: #F80; background: hsl(  36, 100%, 50%); }
-.element.labequipment    { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element.grounds         { background: #ecf0f1; /*background: hsl(   0, 100%, 50%);*/ }
+.element.networking      { background: #ecf0f1; /*background: hsl(  36, 100%, 50%);*/ }
+.element.labequipment    { background: #ecf0f1; /*background: hsl(  72, 100%, 50%);*/ }
 
 
 
@@ -213,7 +216,7 @@ body {
 
 .element .weight {
   font-size: 0.9em;
-  left: 0.5em;
+  left: 1.2em;
   bottom: 0.5em;
 }
 
@@ -426,7 +429,7 @@ body {
 /**** Docs ****/
 
 .docs #content {
-  max-width: 640px;
+  max-width: 850px;
 }
 
 .docs #content a:hover {

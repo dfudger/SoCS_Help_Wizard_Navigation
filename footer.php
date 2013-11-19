@@ -22,7 +22,7 @@
     
       $container.isotope({
         masonry: {
-          columnWidth: 400 /*******************************************************/
+          columnWidth: 400 /***************************** space between **************************/
         },
         sortBy: 'number',
         getSortData: {
@@ -109,22 +109,22 @@
 
 
 
-	</div><!-- #main -->
-	<br />
-	<footer id="colophon" role="contentinfo" style="background: #ddd;">
+  </div><!-- #main -->
+  <br />
+  <footer id="colophon" role="contentinfo" style="background: #ddd;">
 
-			<?php
-				/* A sidebar in the footer? Yep. You can can customize
-				 * your footer with three columns of widgets.
-				 */
-				if ( ! is_404() )
-					get_sidebar( 'footer' );
-			?>
+      <?php
+        /* A sidebar in the footer? Yep. You can can customize
+         * your footer with three columns of widgets.
+         */
+        if ( ! is_404() )
+          get_sidebar( 'footer' );
+      ?>
 
-		<div class="pad center small">
-			School of Computer Science - University of Guelph
-		</div>
-	</footer><!-- #colophon -->
+    <div class="pad center small">
+      School of Computer Science - University of Guelph
+    </div>
+  </footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

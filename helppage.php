@@ -16,9 +16,9 @@ get_header(); ?>
     <div id="primary">
         <div id="content" role="main">
         
- 		<!-- Help Section Begins -->
+        <!-- Help Section Begins -->
                 <section id="content"><section class="clearfix combo-filters" id="options">
-		<h1><?php echo get_the_title();?></h1>
+        <h1 class="entry-title"><?php echo get_the_title();?></h1>
 
                 <!-- Filter Navigation -->
                 <h2>Filters:</h2>

@@ -179,7 +179,7 @@ body {
           border-top-right-radius: 1.2em;
 }
 
-.element.grounds         { background: #F00; background: hsl(   0, 100%, 50%); }
+.element.grounds         { background: #ecf0f1; background: hsl(   0, 100%, 50%); }
 .element.networking      { background: #F80; background: hsl(  36, 100%, 50%); }
 .element.labequipment    { background: #FF0; background: hsl(  72, 100%, 50%); }
 
